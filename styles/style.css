@@ -6,8 +6,8 @@
 body{
   font-family: "Inter", sans-serif;
   min-height: 100vh;
-  margin-top: 60px;
-  background-color: #F8FAFC;
+  margin-top: 120px;
+  background-color: #F6F7F8;
 }
 nav, nav>ul, nav>div{
   display: flex;
@@ -23,6 +23,7 @@ nav{
   z-index: 1;
   background-color: #fff;
   justify-content: space-between;
+  border-bottom: 1px solid #d2dfec;
 }
 nav > ul > li{
   list-style: none;
@@ -108,12 +109,15 @@ nav > div > .menu{
   right: 0;
   height: 100%;
   width: 300px;
+  padding: 0;
   background-color: #fff;
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
+  box-shadow: 1px 1px 10px 20px rgba(194, 192, 192, 0.1);
+
 }
 .side-nav .get-started{
   background-color: #137FEC;
@@ -158,4 +162,64 @@ nav > div > .menu{
     display: flex;
     margin-right: 20px;
   }
+}
+
+
+/* Hero Section */
+.hero-section{
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.hero-section img{
+  border-radius: 20px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 10px 20px rgba(194, 192, 192, 0.1);
+  /* make image to be fitting container irrespective of size */
+}
+.hero-section .hero-left{
+  margin: 0px 10px;
+  padding: 10px 20px;
+}
+.hero-section .hero-left h1{
+  font-weight: 900;
+  margin: 20px;
+  color: #111418;
+}
+.hero-section .hero-left p{
+  margin: 20px;
+  color:rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+.hero-section .hero-left .hero-search{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+}
+.hero-section .hero-left .hero-search-input{
+  width: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.hero-section .hero-left .hero-search-input::placeholder, 
+.hero-section .hero-left .hero-search-icon{
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+.hero-section .hero-search .btn{
+  background-color: #137FEC;
+  color:#fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.hero-section .hero-search .btn:hover{
+  opacity: 0.9;
 }
