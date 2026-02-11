@@ -1,6 +1,6 @@
 *{
   margin: 0;
-  border: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body{
@@ -60,7 +60,6 @@ nav > div{
 }
 nav > div > a {
   text-decoration: none;
-  /* margin-right: 10px; */
 }
 nav > div > form > .nav-search{
   width: max-content;
@@ -241,4 +240,55 @@ nav > div > .menu{
   font-size: 12px;
 }
 
+/* Category Section */
+.category{
+  padding: 40px 20px;
+}
+.category .category-title{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.category-title h4{
+  font-weight: 700;
+}
+.category-title a{
+  text-decoration: none;
+  color: #137FEC;
+  font-weight: 700;
+}
+.category-title a:hover{
+  text-decoration: underline;
+}
+.category .category-section{
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 20px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  border: 1px solid #d2dfec;
+
+}
+.category-section i{
+  color: #137FEC;
+}
+.category-section span{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E7F2FD;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.category-section h5{
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.category-section p{
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 5px;
+}
 
