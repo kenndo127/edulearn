@@ -9,13 +9,13 @@ body{
   margin-top: 120px;
   background-color: #F6F7F8;
 }
-nav, nav>ul, nav>div{
+nav{
   display: flex;
   align-items: center;
   margin: 0;
 }
 nav{
-  padding: 15px;
+  padding: 10px;
   position: fixed;
   top: 0;
   left: 0;
@@ -24,6 +24,11 @@ nav{
   background-color: #fff;
   justify-content: space-between;
   border-bottom: 1px solid #d2dfec;
+}
+nav > ul{
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 nav > ul > li{
   list-style: none;
@@ -49,9 +54,13 @@ nav a .icon{
 nav a:hover{
   color: #137FEC;
 }
+nav > div{
+  display: flex;
+  gap: 10px;
+}
 nav > div > a {
   text-decoration: none;
-  margin: 0px 10px;
+  /* margin-right: 10px; */
 }
 nav > div > form > .nav-search{
   width: max-content;
@@ -164,7 +173,6 @@ nav > div > .menu{
   }
 }
 
-
 /* Hero Section */
 .hero-section{
   padding: 20px;
@@ -174,7 +182,9 @@ nav > div > .menu{
   border-radius: 20px;
   margin-bottom: 10px;
   box-shadow: 1px 1px 10px 20px rgba(194, 192, 192, 0.1);
-  /* make image to be fitting container irrespective of size */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .hero-section .hero-left{
   margin: 0px 10px;
@@ -182,11 +192,11 @@ nav > div > .menu{
 }
 .hero-section .hero-left h1{
   font-weight: 900;
-  margin: 20px;
+  margin: 10px;
   color: #111418;
 }
 .hero-section .hero-left p{
-  margin: 20px;
+  margin: 10px;
   color:rgba(0, 0, 0, 0.5);
   font-weight: 500;
 }
@@ -197,7 +207,7 @@ nav > div > .menu{
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
-  margin: 20px;
+  margin: 10px;
 }
 .hero-section .hero-left .hero-search-input{
   width: 100%;
@@ -223,3 +233,12 @@ nav > div > .menu{
 .hero-section .hero-search .btn:hover{
   opacity: 0.9;
 }
+.hero-section .hero-left small{
+  margin-left: 10px;
+  margin-top: -10px;
+  color:rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+
